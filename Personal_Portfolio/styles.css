@@ -1,0 +1,19 @@
+#welcome-section {
+    height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+@media (min-width: 600px) {
+
+    /* styles for screens 600px and above */
+    #welcome-section {
+        height: 50vh;
+    }
+}
