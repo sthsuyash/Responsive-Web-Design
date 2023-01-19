@@ -1,0 +1,60 @@
+ /* default styles */
+ body {
+     font-size: 16px;
+ }
+
+ header {
+     display: flex;
+     align-items: center;
+ }
+
+ #header-img {
+     width: 50px;
+     height: 50px;
+     margin-right: 10px;
+ }
+
+ #nav-bar {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ #form {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ /* media query */
+ @media only screen and (max-width: 600px) {
+
+     /* styles for screens smaller than 600px */
+     body {
+         font-size: 14px;
+     }
+
+     #header-img {
+         width: 40px;
+         height: 40px;
+     }
+
+     #nav-bar {
+         flex-wrap: wrap;
+     }
+
+     #form {
+         flex-wrap: nowrap;
+     }
+ }
+
+ #nav-bar {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 1;
+     /* to make sure it's on top of other elements */
+ }
+
+ section {
+     padding-top: 60px;
+     /* adjust as needed */
+ }
