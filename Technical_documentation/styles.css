@@ -1,0 +1,41 @@
+#main-doc {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.main-section {
+    margin: 2em 0;
+}
+
+/* Styling for the navigation bar */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background: #f1f1f1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    margin: 0.5em 0;
+    text-decoration: none;
+    color: black;
+}
+
+/* Media query for small screen devices */
+@media only screen and (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 100%;
+    }
+
+    #main-doc {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+}
