@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+</body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Please complete the following survey to help us improve our services.</p>
+<form id="survey-form" action="submit-form.php" method="post">
+  <label for="name" id="name-label">Name:
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+  <label for="email" id="email-label">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+  <label for="number" id="number-label">Age:</label>
+  <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age">
+
+  <label for="dropdown" id="dropdown-label">Select your gender:</label>
+  <select id="dropdown" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <label id="gender-label">Select your gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+
+  <label id="hobbies-label">Select your hobbies:</label>
+  <input type="checkbox" id="reading" name="hobbies" value="reading">
+  <label for="reading">Reading</label>
+  <input type="checkbox" id="travel" name="hobbies" value="travel">
+  <label for="travel">Travel</label>
+  <input type="checkbox" id="sports" name="hobbies" value="sports">
+  <label for="sports">Sports</label>
+
+  <label for="comments">Additional comments:</label>
+  <textarea id="comments" name="comments"></textarea>
+
+  <input type="submit" id="submit" value="Submit">
+</form>
+
+</html>
